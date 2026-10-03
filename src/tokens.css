@@ -1,0 +1,12 @@
+:root {
+  --paper: #f7f3eb;
+  --paper-deep: #eee8dd;
+  --ink: #39362f;
+  --muted: #6c6357;
+  --line: #c7beab61;
+  --line-strong: #b3a58d8c;
+  --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --script: 'Great Vibes', cursive;
+  --sans: Arial, Helvetica, sans-serif;
+  --sinhala: 'Noto Serif Sinhala', 'Iskoola Pota', serif;
+}

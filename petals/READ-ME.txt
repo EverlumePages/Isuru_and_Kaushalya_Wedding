@@ -1,0 +1,39 @@
+ONE FILE:  account-deletion.html
+
+It replaces  web/account-deletion.html  inside the Hamuwemu Legal Pack v2.1
+zip. Same file name, same folder, same URL (/legal/account-deletion).
+Everything else in that zip is used exactly as it came.
+
+WHAT IS DIFFERENT FROM THE ONE IN THE ZIP
+
+  1. The page can now delete an account by itself: sign in with email and
+     password, a 6-digit code to the phone on the account, type DELETE,
+     and the account is erased. Google requires a deletion route that works
+     without installing the app; until now that route was an email to a
+     person, who then had to act on it.
+
+     The existing request form is still on the page, below it, unchanged.
+     It is still needed for a forgotten password and for the other data
+     rights - a copy of your data, a correction, withdrawing consent.
+
+  2. The subscription warning is stronger, and this was deliberate. It now
+     says that deleting the account does NOT turn the subscription off,
+     that the charges can continue if the member does nothing, and how to
+     get a refund if a payment is taken afterwards. The app carries the
+     same words. The two must not disagree - do not soften it back.
+
+NOTHING TO CONFIGURE
+
+  No build step, no keys to set, no database access at your end. The two
+  keys inside the file are both public ones: the Supabase anon key, which
+  also ships inside the Android app, and the Cloudflare Turnstile site key,
+  which is public by design. There is no secret in this file and none
+  should be added.
+
+  The page talks to Supabase from the visitor's browser, so no personal
+  data passes through the host. HTTPS is the only requirement.
+
+  It loads one thing from outside: the Turnstile widget. If that fails to
+  load the page hides it and still works.
+
+Do not upload this file.

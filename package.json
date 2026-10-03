@@ -1,0 +1,31 @@
+{
+  "name": "pearl-and-paper-invitation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "assets": "node scripts/prepare-assets.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/great-vibes": "^5.3.0",
+    "@fontsource/noto-serif-sinhala": "^5.3.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.2.5",
+    "@vitejs/plugin-react": "^6.0.2",
+    "axe-core": "^4.11.0",
+    "sharp": "https://registry.npmjs.org/sharp/-/sharp-0.35.4.tgz",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16"
+  }
+}

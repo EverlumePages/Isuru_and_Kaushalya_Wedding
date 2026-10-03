@@ -1,0 +1,79 @@
+/* Sinhala-specific metrics; the existing English type and layout stay intact. */
+[lang='si'] {
+  font-family: var(--sinhala), var(--serif);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.85;
+}
+
+.bilingual {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  vertical-align: middle;
+  line-height: 1.35;
+  text-align: inherit;
+}
+
+.bilingual > [lang='si'] { font-size: 13px; line-height: 1.7; }
+.header-rsvp .bilingual > [lang='si'], .discover .bilingual > [lang='si'] { font-size: 12px; }
+.rsvp-form .field label > .bilingual, .attendance-field legend > .bilingual { color: inherit; font-size: inherit; }
+.field label > .bilingual > [lang='si'], .attendance-field legend > .bilingual > [lang='si'] { font-size: 14px; }
+.field input[lang='si'], .field textarea[lang='si'] { font-family: 'Cormorant Garamond', 'Noto Serif Sinhala', Georgia, serif; line-height: 1.85; }
+.field input[lang='si']::placeholder, .field textarea[lang='si']::placeholder { font-size: 14px; }
+.field .optional[lang='si'] { font-size: 12px; font-style: normal; }
+.attendance-options label { min-width: 0; }
+.attendance-options .bilingual { text-align: center; }
+.attendance-options .bilingual > [lang='si'] { font-size: 12px; }
+.guest-count-row .bilingual > [lang='si'] { font-size: 13px; }
+.rsvp-form .primary-button .bilingual { text-align: center; }
+.rsvp-form .primary-button .bilingual > [lang='si'] { font-size: 13px; }
+.form-note[lang='si'] { font-size: 12px; line-height: 1.95; }
+.form-note [lang='en'], .handoff-message [lang='en'] { font-family: var(--serif); }
+.form-error[lang='si'], .handoff-message p[lang='si'] { font-size: 14px; line-height: 1.85; }
+
+.invitation-copy > p.si-copy { font-size: 16px; line-height: 1.95; }
+.invitation-copy > p.intro-line[lang='si'] { font-size: 18px; line-height: 1.85; max-width: 330px; }
+.letter-copy p[lang='si'] { font-size: 16px; line-height: 1.85; padding: 12px 4px; }
+.venue-footnote[lang='si'] { font-size: 14px; line-height: 1.85; font-style: normal; }
+.programme-event p[lang='si'] { font-size: 14px; line-height: 1.85; }
+.programme-note[lang='si'] { font-size: 15px; line-height: 1.85; font-style: normal; }
+.section-description[lang='si'], .rsvp-intro > p[lang='si'] { font-size: 16px; line-height: 1.95; }
+.dress-note p[lang='si'] { font-size: 14px; line-height: 1.95; font-style: normal; }
+.envelope-copy > span[lang='si'] { font-size: 14px; line-height: 1.7; }
+.wishes-text[lang='si'] { font-size: 16px; line-height: 1.95; }
+.footer-meta .bilingual > [lang='si'] { font-size: 11px; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 1050px) {
+  .letter-copy p[lang='si'] { font-size: 14px; padding: 9px 4px; }
+}
+
+@media (max-width: 767px) {
+  .invitation-copy > p.intro-line[lang='si'] { font-size: 17px; }
+  .programme-event p[lang='si'] { font-size: 13px; line-height: 1.8; }
+  .event-3 p[lang='si'] { margin-top: 2px; }
+  .programme-note[lang='si'] { font-size: 14px; }
+  .rsvp-form .primary-button { gap: 7px; }
+  .envelope-copy > span[lang='si'] { font-size: 13px; line-height: 1.7; }
+  .envelope-copy .icon { margin-top: 6px; }
+}
+
+@media (max-width: 359px) {
+  .letter-copy p[lang='si'] { font-size: 13px; padding: 8px 3px; }
+  .envelope-copy > span[lang='si'] { font-size: 12px; }
+  .envelope-copy > span:nth-child(2) { margin-top: 6px; }
+}

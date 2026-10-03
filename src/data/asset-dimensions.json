@@ -1,0 +1,94 @@
+{
+  "couple": {
+    "width": 1100,
+    "height": 816
+  },
+  "couple-small": {
+    "width": 640,
+    "height": 475
+  },
+  "clouds": {
+    "width": 914,
+    "height": 1720
+  },
+  "pearl-left": {
+    "width": 210,
+    "height": 482
+  },
+  "taupe-paper": {
+    "width": 850,
+    "height": 1430
+  },
+  "pearl-right": {
+    "width": 210,
+    "height": 725
+  },
+  "pearl-garland": {
+    "width": 900,
+    "height": 207
+  },
+  "letter": {
+    "width": 850,
+    "height": 697
+  },
+  "pendant": {
+    "width": 120,
+    "height": 481
+  },
+  "pearl-drape": {
+    "width": 720,
+    "height": 202
+  },
+  "necklace": {
+    "width": 430,
+    "height": 984
+  },
+  "envelope": {
+    "width": 880,
+    "height": 699
+  },
+  "pearl-hearts": {
+    "width": 900,
+    "height": 193
+  },
+  "swatch-charcoal": {
+    "width": 160,
+    "height": 158
+  },
+  "swatch-forest": {
+    "width": 160,
+    "height": 161
+  },
+  "swatch-olive": {
+    "width": 160,
+    "height": 160
+  },
+  "swatch-teal": {
+    "width": 160,
+    "height": 159
+  },
+  "swatch-chocolate": {
+    "width": 160,
+    "height": 158
+  },
+  "swatch-taupe": {
+    "width": 160,
+    "height": 159
+  },
+  "swatch-champagne": {
+    "width": 160,
+    "height": 160
+  },
+  "venue-frame": {
+    "width": 720,
+    "height": 1073
+  },
+  "flower": {
+    "width": 420,
+    "height": 428
+  },
+  "pearlheart": {
+    "width": 128,
+    "height": 113
+  }
+}

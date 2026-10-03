@@ -1,0 +1,53 @@
+.floating-hearts {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  overflow: clip;
+  pointer-events: none;
+  user-select: none;
+  contain: strict;
+}
+
+.floating-heart {
+  position: absolute;
+  top: -60px;
+  left: var(--heart-left);
+  width: var(--heart-size);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform;
+  animation: pearl-heart-fall var(--heart-duration) linear var(--heart-delay) infinite;
+}
+
+.floating-heart img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  animation: pearl-heart-sway 6s ease-in-out var(--heart-delay) infinite alternate;
+}
+
+.floating-hearts[data-paused='true'] .floating-heart,
+.floating-hearts[data-paused='true'] .floating-heart img {
+  animation-play-state: paused;
+}
+
+@keyframes pearl-heart-fall {
+  0% { transform: translate3d(0, 0, 0); opacity: 0; }
+  12%, 88% { opacity: var(--heart-opacity); }
+  100% { transform: translate3d(var(--heart-drift), calc(100vh + 120px), 0); opacity: 0; }
+}
+
+@keyframes pearl-heart-sway {
+  from { transform: translateX(-8px) rotate(var(--heart-rotation)); }
+  to { transform: translateX(8px) rotate(calc(var(--heart-rotation) * -1)); }
+}
+
+@media (max-width: 767px) {
+  .floating-heart { width: min(var(--heart-size), 30px); }
+  .floating-heart:nth-child(n + 7) { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-hearts { display: none; }
+  .floating-heart, .floating-heart img { animation: none; }
+}
